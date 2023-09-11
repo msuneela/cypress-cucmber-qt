@@ -20,6 +20,7 @@ Given('I add four random items to my cart', () => {
     ItemListPage.itemlist.eq(3).trigger('mouseover');
 
     ItemListPage.addToCart.eq(3).click();
+    cy.wait(500);
 
 })
 
